@@ -1,0 +1,48 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  position: relative;
+    border: 5px solid white;
+  border-image: url(gradient.png) 20% stretch;
+  margin: 2%;
+  overflow: hidden;
+  width: 300px;
+}
+.item img {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.5s;
+}
+.item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.5);
+}
+.item2 {
+  position: relative;
+   border: 7px solid white;
+  border-image: url(gradient.png) 10% stretch;
+  margin: 2%;
+  overflow: hidden;
+  width: 300px;
+}
+.item2 img {
+  max-width: 100%;
+  transform: scale(2);
+    transition: all 0.5s;
+  
+}
+.item2:hover img {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.5s;
+    transform: scale(1);
+}
